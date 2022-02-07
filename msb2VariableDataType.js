@@ -72,20 +72,20 @@
 
 // 2.8 Exercise - Person Object 
 
-let person = {
-    name: 'John',
-    age: 47,
-    isMarried: true,
-    homeAddress: {
-        long:83.33,
-        lat: 24.44},
+// let person = {
+//     name: 'John',
+//     age: 47,
+//     isMarried: true,
+//     homeAddress: {
+//         long:83.33,
+//         lat: 24.44},
 
-    friends: ['Jeff', 'Marry', 'Smith'],
-    }
-console.log(person);
-console.log(person.age);
-console.log(person.isMarried);
-console.log(person.homeAddress);
-console.log(person.homeAddress.lat);
-console.log(person.friends);
-console.log(person.friends [1]);
+//     friends: ['Jeff', 'Marry', 'Smith'],
+//     }
+// console.log(person);
+// console.log(person.age);
+// console.log(person.isMarried);
+// console.log(person.homeAddress);
+// console.log(person.homeAddress.lat);
+// console.log(person.friends);
+// console.log(person.friends [1]);
