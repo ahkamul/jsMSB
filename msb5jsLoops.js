@@ -66,13 +66,94 @@
 
 // Ex. 3
 
-let names = ['Juthi', 'Bithi', 'Saroti', 'Alo'];
+// let names = ['Juthi', 'Bithi', 'Saroti', 'Alo'];
 
-console.log (names);
+// console.log (names);
 
-for (let index in names){
-    console.log (index, names [index]);
+// for (let index in names){
+//     console.log (index, names [index]);
+// }
+
+
+// 5.5 For of loop 
+
+// let numbers = [11, 12, 13];
+
+// for (let num of numbers) {
+//     console.log (num);
+// }
+
+
+// 5.6 Break and Continue
+
+// Ex. 1
+
+// for (let index = 1; index <= 20; index++){
+//     console.log(index);
+//     if(index === 10){
+//         break;
+//     }
+// }
+
+// Ex. 2
+
+// for (let index = 1; index <= 20; index++){
+//     if (index === 10){
+//         continue;
+//     }
+//     console.log(index);
+// }
+
+// Ex. 3
+
+// for (let index = 1; index <= 20; index++){
+//     if (index % 2 === 1){
+//         continue;
+//     }
+//     console.log (index);
+// }
+
+
+// 5.8 Nested loop
+
+// for (let i = 1; i <= 5; i++){
+//     for (let j = 1; j <= 5; j++){
+//         console.log (i, j);
+//     }
+// }
+
+
+// 5.9 Exercise - Even Odd Numbers
+
+// for (let index = 1; index <= 10; index++){
+//     if (index % 2 === 1){
+//         console.log(`${index} is an odd number`);
+//     } else {
+//         console.log (`${index} is an even number`)
+//     }
+// }
+
+// Another way to print even - odd numbers
+
+// for (let index = 1; index <= 10; index += 2){
+//     console.log(`${index} is an odd number`);
+// }
+
+// for (let index = 2; index <= 10; index += 2){
+//     console.log(`${index} is an odd number`);
+// }
+
+
+// 5.10 Exercise - Sum Of Numbers
+
+let numbers = [10, 20, 30, 40, 50, 60];
+let sum = 0;
+
+for (let index = 0; index < numbers.length; index++){
+    //sum = sum + numbers[index];
+    sum += numbers[index];
 }
+console.log('Sum = ' + sum);
 
 
 
