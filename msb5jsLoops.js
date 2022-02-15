@@ -146,14 +146,24 @@
 
 // 5.10 Exercise - Sum Of Numbers
 
-let numbers = [10, 20, 30, 40, 50, 60];
-let sum = 0;
+// let numbers = [10, 20, 30, 40, 50, 60];
+// let sum = 0;
 
-for (let index = 0; index < numbers.length; index++){
-    //sum = sum + numbers[index];
-    sum += numbers[index];
-}
-console.log('Sum = ' + sum);
+// for (let index = 0; index < numbers.length; index++){
+//     //sum = sum + numbers[index];
+//     sum += numbers[index];
+// }
+// console.log('Sum = ' + sum);
+
+// How the above program works:
+
+// 0
+// 0 + 10
+// 0 + 10 + 20
+// 0 + 10 + 20 + 30
+// 0 + 10 + 20 + 30 + 40
+// 0 + 10 + 20 + 30 + 40 + 50 
+// 0 + 10 + 20 + 30 + 40 + 50 + 60
 
 
 
