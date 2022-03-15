@@ -36,7 +36,7 @@ console.log(message.startsWith('please')); // false as it starts with lower case
 console.log(message.startsWith('Please'));
 
 console.log(message.endsWith('word'));
-console.log(message.endsWith('Word'));
+console.log(message.endsWith('Word')); // false as it ends with Upper case
 
 
 
