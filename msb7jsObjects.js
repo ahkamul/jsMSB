@@ -122,30 +122,118 @@
 
 // 7.6 Object Destructuring :
 
-const user = {
-    name: 'John',
-    age: 47,
-    favBook: {
-        name: 'Hangor Nadi Granade',
-        author: 'Selina Hosen',
-    },
-};
+// const user = {
+//     name: 'John',
+//     age: 47,
+//     favBook: {
+//         name: 'Hangor Nadi Granade',
+//         author: 'Selina Hosen',
+//     },
+// };
 
-// console.log(user.name);
-// console.log(user.age);
-// console.log(user.favBook.name);
-// console.log(user.favBook.author);
+// // console.log(user.name);
+// // console.log(user.age);
+// // console.log(user.favBook.name);
+// // console.log(user.favBook.author);
 
-const {name, age, favBook} = user;
+// const {name, age, favBook} = user;
 
-console.log(name);
-console.log(age);
-console.log(favBook.name);
-console.log(favBook.author);
+// console.log(name);
+// console.log(age);
+// console.log(favBook.name);
+// console.log(favBook.author);
 
-const {name:title, author} = favBook;
+// const {name:title, author} = favBook;
 
-console.log(name);
-console.log(age);
-console.log(title);
-console.log(author);
+// console.log(name);
+// console.log(age);
+// console.log(title);
+// console.log(author);
+
+
+// 7.7 Exercise - Doctor Object (Learn Object All in One):
+
+// const docObject = {
+//     name: 'John',
+//     designation: 'Medicine Specialist',
+//     clinic: {
+//         name: 'Happy Care Clinic',
+//         address: {
+//             long: 23.66,
+//             lat: 90.44,
+//             },
+//         },
+//     Operation: function(){
+//         console.log('He started doing operation')
+//     },
+// };
+
+// // console.log(docObject);
+// // console.log(docObject.name);
+// // console.log(docObject.designation);
+// // console.log(docObject.clinic.name);
+// // console.log(docObject.clinic.address);
+
+// // Object Destructuring
+
+// // const {name, designation, clinic} = docObject;
+// // const {name : clinicName, address} = clinic;
+// // const {long, lat} = address;
+
+// // Object Destructuring in Oneline: 
+
+// const {name, designation, 
+//         clinic: {name : clinicName, 
+//             address: {long, lat}} } = docObject
+
+// console.log(name);
+// console.log(designation);
+// console.log(clinicName);
+// console.log(long);
+// console.log(lat);
+
+// for (let prop in docObject){
+//     console.log(prop, docObject[prop]);
+// }
+
+
+// 7.8 Cloning an Object:
+
+// const user = {
+//     name: 'John',
+//     age: 34,
+// }
+
+// // const copiedUser = {};
+// // copiedUser.name = user.name;
+// // copiedUser.age = user.age;
+
+// // for (let key in user){
+// //     console.log(key, user[key]);
+// //     copiedUser[key] = user[key];
+// // }
+
+// // const copiedUser = Object.assign({}, user);
+
+// // console.log(copiedUser);
+
+// const copiedUser = {... user};
+
+// console.log(copiedUser);
+
+
+// 7.9 Math Object
+
+// console.log(Math.PI);
+// console.log(Math.random);
+console.log(Math.round(1.7));
+console.log(Math.round(1.2));
+
+console.log(Math.ceil(1.2));
+console.log(Math.ceil(1.6));
+
+console.log(Math.floor(1.2));
+console.log(Math.floor(1.6));
+
+console.log(Math.max(1, 2, 3, 100, 2000, -5));
+console.log(Math.min(1, 2, 3, 100, 2000, -5));
