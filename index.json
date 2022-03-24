@@ -1,0 +1,9 @@
+{
+    "name": "John",
+    "age": 47,
+    "friends": ["Mary", "Smith"],
+    "address": {
+        "long": 26.33,
+        "lat": 90.66
+    }
+}

@@ -226,14 +226,26 @@
 
 // console.log(Math.PI);
 // console.log(Math.random);
-console.log(Math.round(1.7));
-console.log(Math.round(1.2));
+// console.log(Math.round(1.7));
+// console.log(Math.round(1.2));
 
-console.log(Math.ceil(1.2));
-console.log(Math.ceil(1.6));
+// console.log(Math.ceil(1.2));
+// console.log(Math.ceil(1.6));
 
-console.log(Math.floor(1.2));
-console.log(Math.floor(1.6));
+// console.log(Math.floor(1.2));
+// console.log(Math.floor(1.6));
 
-console.log(Math.max(1, 2, 3, 100, 2000, -5));
-console.log(Math.min(1, 2, 3, 100, 2000, -5));
+// console.log(Math.max(1, 2, 3, 100, 2000, -5));
+// console.log(Math.min(1, 2, 3, 100, 2000, -5));
+
+
+// 7.10 JSON Data Format
+
+const user = {
+    name: 'John',
+    age: 47,
+}
+const jsonData = JSON.stringify(user);
+
+console.log(jsonData);
+console.log(JSON.parse(jsonData));
