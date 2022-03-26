@@ -118,8 +118,49 @@
 
 // 8.6 Exercise - Area of Circle
 
-const circleArea = function(r){
-    const mul = 22/7 * (r * r);
-    return mul;
+// const circleArea = function(r){
+//     const mul = 22/7 * (r * r);
+//     return mul;
+// }
+// console.log(circleArea(7));
+
+// // Solution alternatively
+
+//  const circleOfArea = function(r){
+//      const mul = Math.PI * r * r;
+//      return mul;
+//  }
+//  console.log(circleArea(7));
+
+//  // Solution another way:
+
+//  const cirOfArea = function(radious){
+//      return Math.PI * radious * radious;
+//  }
+
+//  const area = cirOfArea(7);
+
+//  console.log('Area of Circle = ' + area);
+
+//  // Solution with Arrow Function: 
+
+//  const cirOfAreaArr = radious => Math.PI * radious * radious;
+
+//  console.log(cirOfAreaArr(7));
+
+
+// 8.7 Exercise - Max of Arguments:
+
+let result = maxOfArgument (15, 42, 13, 42, 10, 12, 100);
+console.log (result);
+
+function maxOfArgument (... args){
+    console.log(args);
+    let maxValue = - 1;
+    for(let i = 0; i < args.length; i++){
+        if (maxValue < args[i]){
+            maxValue = args[i]
+        }
+    }
+    return maxValue;
 }
-console.log(circleArea(7));
